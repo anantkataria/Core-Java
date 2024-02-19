@@ -13,6 +13,7 @@ public class AnonymousInnerClass {
     public static void main(String[] args) {
         A obj = new A()
         // this is a way to define anonymous inner class
+        // it is like completely new definition of previously defined class A
         {
             public void show() {
                 System.out.println("In anon A show");
