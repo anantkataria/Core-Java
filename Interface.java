@@ -41,6 +41,8 @@ public class Interface {
         obj.show(); 
         obj.config();
         // obj.run(); this will not work because run() method is not part of interface A
+        System.out.println(A.age); //static variables
+        System.out.println(A.area);
 
         Y obj1 = new B();
         // obj1.show();
