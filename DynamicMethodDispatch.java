@@ -23,6 +23,9 @@ public class DynamicMethodDispatch {
         A obj = new A();
         obj.show();
 
+        // here the obj is still of type A, and we are assigning it the reference of B
+        // and when we call show() on this object of class A, it will invoke the show() method from class B
+        // this is called dynamic method dispatch
         obj = new B();
         obj.show();
 

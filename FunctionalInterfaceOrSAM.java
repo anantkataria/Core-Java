@@ -1,10 +1,10 @@
-// after java 8, we can also define methods in the interface
+// after java 8, we can also define normal methods in the interface
 // before java 8, we could only define abstract methods in it
 
 // there are three main types of interface
 // 1) Normal interface : interface with more than one abstract methods
 // 2) functional interface (SAM - Single Abstract Method) : interface with only one method and it is abstract
-// 3) Marker interface : interface with no methods whatsoever. This interface is used to give message to compiler regarding granting permission, serialization etc..  
+// 3) Marker interface : interface with no methods whatsoever. This interface is used to give message to compiler regarding granting permission, for example serialization etc..  
 
 
 // by using this annotation we are making sure that our interface has only one method signature.

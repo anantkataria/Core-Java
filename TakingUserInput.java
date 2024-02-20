@@ -4,6 +4,9 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class TakingUserInput {
+    // using throws statement on main method is not a good practice for production environment,
+    // as these errors get passed directly to compiler, which is obviously not going to handle them and, 
+    // simply stop the execution further
     public static void main(String[] args) throws IOException {
         System.out.println("Enter a number");
 
@@ -42,7 +45,7 @@ public class TakingUserInput {
         num = sc.nextInt();
         System.out.println("You entered : " + num + ", which was scanned through a scanner!");
 
-        //it is a good practice to close a BufferedReader and/or Scanner once it has been used
+        // it is a good practice to close a BufferedReader and/or Scanner once it has been used
         // when we surround input logic in the try block, these closing statements should come under finally block
         bf.close();
         sc.close();

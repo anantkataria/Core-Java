@@ -7,6 +7,7 @@ class Student {
 public class ObjectsArray {
     public static void main(String[] args) {
         Student s1 = new Student();
+        // in production environment, using instance varibles like this is a bad practice
         s1.rollno = 1;
         s1.name = "Anant";
         s1.marks = 88;

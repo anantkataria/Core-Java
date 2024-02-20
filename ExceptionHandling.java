@@ -6,14 +6,21 @@ class AnantException extends RuntimeException {
 
 // below in the main method, we understand the use of 'throw' keyword
 // there is another keyword called 'throws'
-//
+// this statement is used when given class does not implement try-catch logic in itself,
+// and passes the error to its super class
+// When we use 'throws <Some Error>' on the main method, we are simply passing the error,
+// to the compiler, which will definitely not handle it and stop the execution at the line of error
+// so its not a good practice to use 'throws' for main() method.
 
 public class ExceptionHandling {
     public static void main(String[] args) {
+        @SuppressWarnings("unused")
         int i=5; 
         int j=0;
 
+        @SuppressWarnings("unused")
         int nums[] = new int[5];
+        @SuppressWarnings("unused")
         String str = null;
 
         try {

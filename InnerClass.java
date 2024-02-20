@@ -1,5 +1,6 @@
 class A { 
-    int age;
+    @SuppressWarnings("unused")
+    private int age;
 
     public void show() {
         System.out.println("In Show");

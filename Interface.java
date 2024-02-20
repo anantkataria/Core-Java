@@ -19,7 +19,7 @@ interface Y extends X {
 
 }
 
-// class has to implement all methods of all interfaces for it to be concrete class, 
+// class has to implement all methods of all extended interfaces for it to be concrete class, 
 // otherwise it will be an abstract class
 class B implements A, Y {
     public void show() {

@@ -26,6 +26,7 @@ class Mobile {
 }
 
 public class Static {
+    @SuppressWarnings("static-access")
     public static void main(String[] args) {
         Mobile obj1 = new Mobile();
         obj1.brand = "Apple";
